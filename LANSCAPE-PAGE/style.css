@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #222, #111);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(Tic-Tac-Toe\ &\ 4\ in\ a\ row.jpg);
+}
+
+.container{
+    display: flex;
+    gap: 40px;
+}
+
+.card{
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+    transition: transform 0.2s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card h2{
+    margin-bottom: 15px;
+}
+
+.card p{
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 16px;
+    background: #0a84ff;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn:hover{
+    background: #006edc;
+}

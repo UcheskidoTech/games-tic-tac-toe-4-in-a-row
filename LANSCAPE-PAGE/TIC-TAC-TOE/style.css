@@ -1,0 +1,135 @@
+body{
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: rgb(244, 244, 249);
+  color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: center;
+}
+
+.app-container{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.project{
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #333;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+h1{
+  margin-bottom: 10px;
+}
+
+.scoreboard{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.board{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin: 0 auto 20px;
+}
+
+.cell{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 2px solid rgb(51, 51, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cell:hover{
+  background-color: lightgrey;
+}
+
+.cell.taken{
+  cursor: not-allowed;
+}
+
+.winner{
+  background: lightgreen !important;
+  color: black;
+  font-weight: bold;
+}
+
+#resetBtn{
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: rgb(51, 51, 51);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#resetBtn:hover{
+  background: darkgray;
+}
+
+
+
+/* TO-DO LIST */
+
+.input-container{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.input-container input{
+  flex: 1;
+  padding: 8px;
+}
+
+#taskList{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.task{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 8px;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+}
+
+.task.completed span{
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.filter-container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
