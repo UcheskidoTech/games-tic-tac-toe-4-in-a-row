@@ -53,3 +53,9 @@ body{
 .btn:hover{
     background: #006edc;
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
